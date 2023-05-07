@@ -7,7 +7,7 @@
     "url": "https://github.com/ribaricplusplus/web-utils.git"
   },
   "private": false,
-  "version": "1.0.0",
+  "version": "1.0.2",
   "type": "module",
   "module": "./dist/ribarich-web-utils.js",
   "types": "./dist/main.d.ts",
@@ -16,7 +16,8 @@
     "package.json",
     "dist/**/*",
     "src/**/*",
-    "LICENSE"
+    "LICENSE",
+    "README.md"
   ],
   "exports": {
     ".": {
