@@ -1,0 +1,47 @@
+{
+  "name": "@ribarich/web-utils",
+  "description": "Various web utilities.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ribaricplusplus/web-utils.git"
+  },
+  "private": false,
+  "version": "1.0.0",
+  "type": "module",
+  "module": "./dist/ribarich-web-utils.js",
+  "types": "./dist/main.d.ts",
+  "main": "./dist/ribarich-web-utils.umd.cjs",
+  "files": [
+    "package.json",
+    "dist/**/*",
+    "src/**/*",
+    "LICENSE"
+  ],
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/main.d.ts",
+        "default": "./dist/ribarich-web-utils.js"
+      },
+      "require": {
+        "types": "./dist/main.d.ts",
+        "default": "./dist/ribarich-web-utils.umd.cjs"
+      }
+    }
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@types/assert": "^1.5.6",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.2",
+    "vite-plugin-dts": "^2.3.0"
+  },
+  "dependencies": {
+    "assert": "^2.0.0"
+  }
+}
